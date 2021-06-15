@@ -44,7 +44,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="<?= base_url("flexstart"); ?>/assets/img/logo.png" alt="">
-        <span>FlexStart</span>
+        <span>1 Point Tech</span>
       </a>
 
       <nav id="navbar" class="navbar">
