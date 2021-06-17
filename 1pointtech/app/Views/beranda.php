@@ -6,6 +6,12 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>1 Point Tech</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+  </style>
   <meta content="" name="description">
 
   <meta content="" name="keywords">
@@ -49,8 +55,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
-          <li><a class="nav-link scrollto" href="#about">Jasa</a></li>
-          <li><a class="nav-link scrollto" href="#services">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="#jasa">Jasa</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -68,7 +73,7 @@
           <h2 data-aos="fade-up" data-aos-delay="400"> Kami Memberikan Pelayanan Terbaik dengan Harga yang Bersahabat. </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a href="#why" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span> Kenapa Harus Pake Jasa Kami? Keliling Yuk! </span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -85,7 +90,7 @@
 
   <main id="main">
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section class="why" id="why">
 
       <div class="container" data-aos="fade-up">
         <div class="row gx-0">
@@ -100,7 +105,7 @@
           </div>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="<?= base_url("flexstart"); ?>/assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="<?= base_url("flexstart"); ?>/assets/img/1.jpg" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -110,11 +115,11 @@
         <div class="row gx-0">
 
         <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="<?= base_url("flexstart"); ?>/assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="<?= base_url("flexstart"); ?>/assets/img/2.jpg" class="img-fluid" alt="">
           </div>
 
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-3" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h1>Harga Bersahabat</h1>
               <p>
@@ -140,7 +145,7 @@
           </div>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="<?= base_url("flexstart"); ?>/assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="<?= base_url("flexstart"); ?>/assets/img/3.jpg" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -150,7 +155,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
+    <section id="jasa" class="jasa">
 
       <div class="container" data-aos="fade-up">
 
@@ -242,8 +247,8 @@
 
       </div>
     </section>End Counts Section -->
-    <div class="text-center">
-      <a type="button" class="btn btn-success mb-5 p-4"> <h2> <i class="bi bi-whatsapp"></i> Penasaran? Tanya dulu yuk! </h2></a>
+    <div class="text-center mt-5 mb-5">
+      <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="btn mb-5 p-3 shadow text-white" style="background-color: #4154f1"> <h2> <i class="bi bi-whatsapp"></i> Tanya-tanya dulu yuk! </h2></a>
     </div>
 
 
@@ -276,10 +281,8 @@
               <span> Sosial Media Kami </span>
             </div>
             <div class="social-links mt-5">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+              <a href="#" class="instagram" ><i class="bi bi-instagram"></i></a>
             </div>
           </div>
 
@@ -298,6 +301,26 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Silahkan Pilih Customer Service Kami</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <a href="https://api.whatsapp.com/send/?phone=6285742675344&text=Permisi,%20mau%20bertanya%20tentang%20jasa%20pembuatan%20websitenya?" type="button" class="btn btn-success d-flex"> <h2> <i class="bi bi-whatsapp"></i> CS 1 - Nuki </h2></a>
+      <hr>
+      <a href="https://api.whatsapp.com/send/?phone=6283856814628&text=Permisi,%20mau%20bertanya%20tentang%20jasa%20pembuatan%20websitenya?" type="button" class="btn btn-success d-flex"> <h2> <i class="bi bi-whatsapp"></i> CS 2 - Ramadhan </h2></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
   <!-- Vendor JS Files -->
   <script src="<?= base_url("flexstart"); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="<?= base_url("flexstart"); ?>/assets/vendor/aos/aos.js"></script>
@@ -309,6 +332,8 @@
 
   <!-- Template Main JS File -->
   <script src="<?= base_url("flexstart"); ?>/assets/js/main.js"></script>
+
+  
 
 </body>
 
